@@ -89,6 +89,8 @@ GEM
     net-ssh (2.9.1)
     notifier (0.5.0)
     orm_adapter (0.5.0)
+    protected_attributes (1.0.8)
+      activemodel (>= 4.0.1, < 5.0)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -204,6 +206,7 @@ DEPENDENCIES
   hpricot
   jquery-rails
   notifier
+  protected_attributes
   rails
   resque
   rspec-rails

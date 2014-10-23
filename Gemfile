@@ -14,6 +14,10 @@ gem 'devise'
 gem 'cancan'
 gem 'whenever', require: false
 
+# for now - to be compatible to rails3
+# TODO: refactor to strong params and remove this gem
+gem 'protected_attributes'
+
 group :development do
   gem 'capistrano'
   gem 'capistrano_colors'
