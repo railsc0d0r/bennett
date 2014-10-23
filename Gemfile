@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails',         '3.2.6'
+gem 'rails'
 gem 'sqlite3'
-gem 'resque',        '1.20.0', require: 'resque/server'
+gem 'resque', require: 'resque/server'
 gem 'git'
 gem 'will_paginate'
 gem 'jquery-rails'
@@ -17,7 +17,7 @@ gem 'whenever', require: false
 group :development do
   gem 'capistrano'
   gem 'capistrano_colors'
-  gem 'mongrel', '1.2.0.pre2'
+  gem 'thin'
 end
 
 group :test do
@@ -31,6 +31,5 @@ group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
-  gem 'compass',      '0.12.alpha.1'
   gem 'bootstrap-sass'
 end
