@@ -16,11 +16,11 @@ ActiveRecord::Schema.define(:version => 20141021092024) do
   create_table "builds", :force => true do |t|
     t.integer  "project_id"
     t.string   "commit_hash"
-    t.text     "commit_message"
+    t.text     "commit_message",      :limit => 255
     t.string   "commit_author"
     t.datetime "commit_date"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
     t.string   "commit_author_email"
   end
 
